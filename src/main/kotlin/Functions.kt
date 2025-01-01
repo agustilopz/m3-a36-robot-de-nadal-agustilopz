@@ -1,5 +1,6 @@
 package org.example
 
+import org.example.models.Robot
 import utils.*
 import kotlin.random.Random
 
@@ -7,7 +8,7 @@ import kotlin.random.Random
 enum class Casella (val codiAscii:String) {
     PARET("\uD83E\uDDF1"), //🧱
     ROBOT("\uD83E\uDD16"), //🤖
-    ROCA("\uD83E\uDEA8\uFE0F"), // 🪨
+    ROCA("\uD83D\uDEA7"), // 🪨 🤖🧱🚧⛔ 🕳🥔⛰️🏔️⛰️🗻🌋🛢️⛩️🕋🛑🚫🟥
     DINAMITA("\uD83E\uDDE8") //🧨
 }
 
@@ -39,7 +40,7 @@ fun taulell():Array<Array<Casella>> {
      *
      */
 
-    /**        00  01  02   03  04  05  06  07  08   09  10  11  12   13  14  15  16   17  18  19  [X]
+    /**        00  01  02   03  04  05  06  07  08   09  10  11  12   13  14  15  16   17  18  19  [X] j
      * 00 (19) 🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱
      * 01 (18) 🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱
      * 02 (17) 🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱
@@ -61,6 +62,7 @@ fun taulell():Array<Array<Casella>> {
      * 18 (01) 🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱
      * 19 (00) 🤖  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱  🧱
      * [Y]
+     * i
      *
      * * LIMITS *
      * DALT:    array (col) 00-- / y 19++
@@ -111,4 +113,82 @@ fun mostrarTaulell(taulell:Array<Array<Casella>>) {
     }
 
 }
+fun dalt(taulell:Array<Array<Casella>>,robot:Robot) {
+    var finalTorn:Boolean=false
+    for (i in 0 until taulell.size) {
+        for (j in 0 until taulell[i].size) {
+            if(!finalTorn) {
+                if (taulell[i][j] == Casella.ROBOT) {
+                    finalTorn=true
+                    val novaPosicioY = i - robot.velocitat
+                    val posicioActualY = i
+                    if (novaPosicioY >= 0) {
+                        taulell[novaPosicioY][j] = Casella.ROBOT
+                        taulell[posicioActualY][j] = Casella.DINAMITA
+                    }
 
+                }
+            }
+        }
+    }
+}
+
+fun baix(taulell:Array<Array<Casella>>,robot:Robot) {
+    var finalTorn:Boolean=false
+    for (i in 0 until taulell.size) {
+        for (j in 0 until taulell[i].size) {
+            if(!finalTorn) {
+                if (taulell[i][j] == Casella.ROBOT) {
+                    finalTorn=true
+                    val novaPosicioY = i + robot.velocitat
+                    val posicioActualY = i
+                    if (novaPosicioY <= 19) {
+                        taulell[novaPosicioY][j] = Casella.ROBOT
+                        taulell[posicioActualY][j] = Casella.DINAMITA
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+fun dreta(taulell:Array<Array<Casella>>,robot:Robot) {
+    var finalTorn:Boolean=false
+    for (i in 0 until taulell.size) {
+        for (j in 0 until taulell[i].size) {
+            if(!finalTorn) {
+                if (taulell[i][j] == Casella.ROBOT) {
+                    finalTorn=true
+                    val novaPosicioX = j + robot.velocitat
+                    val posicioActualX = j
+                    if (novaPosicioX <= 19) {
+                        taulell[i][novaPosicioX] = Casella.ROBOT
+                        taulell[i][posicioActualX] = Casella.DINAMITA
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+fun esquerra(taulell:Array<Array<Casella>>,robot:Robot) {
+    var finalTorn:Boolean=false
+    for (i in 0 until taulell.size) {
+        for (j in 0 until taulell[i].size) {
+            if(!finalTorn) {
+                if (taulell[i][j] == Casella.ROBOT) {
+                    finalTorn=true
+                    val novaPosicioX = j - robot.velocitat
+                    val posicioActualX = j
+                    if (novaPosicioX >= 0) {
+                        taulell[i][novaPosicioX] = Casella.ROBOT
+                        taulell[i][posicioActualX] = Casella.DINAMITA
+                    }
+
+                }
+            }
+        }
+    }
+}
