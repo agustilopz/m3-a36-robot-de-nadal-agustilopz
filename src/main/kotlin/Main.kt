@@ -1,5 +1,7 @@
 package org.example
 
 fun main() {
-    println("Hello World!")
+
+    var taulell=taulell()
+    mostrarTaulell(taulell)
 }
