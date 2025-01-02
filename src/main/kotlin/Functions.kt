@@ -8,7 +8,8 @@ enum class Casella (val codiAscii:String) {
     PARET("\uD83E\uDDF1"), //🧱
     ROBOT("\uD83E\uDD16"), //🤖
     ROCA("\uD83D\uDEA7"), // 🪨 🚧 //Com que la roca no funcionava, he utilitzat un altre emoji
-    DINAMITA("\uD83E\uDDE8") //🧨
+    DINAMITA("\uD83E\uDDE8"), //🧨
+    EXPLOSIO("\uD83D\uDCA5") // 💥
 }
 
 /**
@@ -358,6 +359,24 @@ fun mostrarGameOver() {
     """.trimIndent()
 
     println(utils.RED_BOLD + gameOverArt + RESET)
+}
+
+/**
+ * Aquesta funció serveix per mostrar el taulell final en el qual l'usuari ha trepitjat una bomba
+ * @author agustí.lópez
+ * @since 02/01/2025
+ * @param taulell Taulell amb les posicions de cada element, tant el robot com els obstacles
+ * @return Taulell final
+ */
+fun mostrarTaulellGameOver(taulell: Array<Array<Casella>>) {
+    for (i in 0 until taulell.size) {
+        for (j in 0 until taulell[i].size) {
+                if (taulell[i][j] == Casella.ROBOT) {
+                    taulell[i][j]=Casella.EXPLOSIO
+                }
+        }
+    }
+    mostrarTaulell(taulell)
 }
 
 
