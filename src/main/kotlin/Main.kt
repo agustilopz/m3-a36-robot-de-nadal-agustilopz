@@ -5,38 +5,73 @@ import java.util.*
 val scan: Scanner = Scanner(System.`in`)
 fun main() {
     var taulell=taulell()
-    taulell= taulellInicial(taulell)
+    //taulell= taulellInicial(taulell)
+    //var gameOver:Boolean=false
+    var robot=Robot(x=0,y=0,1)
     do {
         var ordreUsuari=scan.nextLine()
-        val robot=Robot(x=0,y=0,1)
+
 
         when (ordreUsuari) {
             "DALT" -> {
-                dalt(taulell, robot)
+                var dalt=dalt(taulell, robot)
+                var gameOver=gameOver(dalt)
+                if(gameOver==true){
+                    println("GAME OVER")
+                }
             }
 
             "BAIX" -> {
-                baix(taulell, robot)
+                var baix=baix(taulell, robot)
+                var gameOver=gameOver(baix)
+                if(gameOver==true){
+                    println("GAME OVER")
+                }
+
             }
 
             "DRETA" -> {
-                dreta(taulell, robot)
+                var dreta=dreta(taulell, robot)
+                var gameOver=gameOver(dreta)
+                if(gameOver==true){
+                    println("GAME OVER")
+                }
             }
 
             "ESQUERRA" -> {
-                esquerra(taulell, robot)
+                var esquerra=esquerra(taulell, robot)
+                var gameOver=gameOver(esquerra)
+                if(gameOver==true){
+                    println("GAME OVER")
+                }
             }
 
-            "ACCELERAR" -> {}
-            "FRENAR" -> {}
-            "POSICIO" -> {}
+            "ACCELERAR" -> {
+                if((robot.velocitat+1)<=5) {
+                    robot.velocitat++
+                }
+            }
+            "FRENAR" -> {
+                if((robot.velocitat-1)>=0) {
+                    robot.velocitat--
+                }
+            }
+            "POSICIO" -> {
+                println("X: "+ robot.x + " Y: " + robot.y)
+            }
             "MOSTRAR" -> {
                 mostrarTaulell(taulell)
             }
 
-            "VELOCITAT" -> {}
-            "REINICIAR" -> {}
-            "END" -> {}
+            "VELOCITAT" -> {
+                println(robot.velocitat)
+            }
+            "REINICIAR" -> {
+                robot=Robot(x=0,y=0,1)
+            }
+            "END" -> {
+                println("EXIT")
+            }
             else -> {}
         }
 

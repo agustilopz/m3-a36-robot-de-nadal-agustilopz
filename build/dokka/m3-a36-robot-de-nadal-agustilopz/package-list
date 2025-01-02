@@ -1,0 +1,53 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:org.example.models////PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example.models/index.html
+$dokka.location:org.example.models/Robot///PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example.models/-robot/index.html
+$dokka.location:org.example.models/Robot/Robot/#kotlin.Int#kotlin.Int#kotlin.Int/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example.models/-robot/-robot.html
+$dokka.location:org.example.models/Robot/getVelocitat/#/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example.models/-robot/get-velocitat.html
+$dokka.location:org.example.models/Robot/getX/#/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example.models/-robot/get-x.html
+$dokka.location:org.example.models/Robot/getY/#/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example.models/-robot/get-y.html
+$dokka.location:org.example.models/Robot/setVelocitat/#kotlin.Int/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example.models/-robot/set-velocitat.html
+$dokka.location:org.example.models/Robot/setX/#kotlin.Int/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example.models/-robot/set-x.html
+$dokka.location:org.example.models/Robot/setY/#kotlin.Int/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example.models/-robot/set-y.html
+$dokka.location:org.example////PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/index.html
+$dokka.location:org.example/Casella.DINAMITA///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}m3-a36-robot-de-nadal-agustilopz/org.example/-casella/-d-i-n-a-m-i-t-a/index.html
+$dokka.location:org.example/Casella.PARET///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}m3-a36-robot-de-nadal-agustilopz/org.example/-casella/-p-a-r-e-t/index.html
+$dokka.location:org.example/Casella.ROBOT///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}m3-a36-robot-de-nadal-agustilopz/org.example/-casella/-r-o-b-o-t/index.html
+$dokka.location:org.example/Casella.ROCA///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}m3-a36-robot-de-nadal-agustilopz/org.example/-casella/-r-o-c-a/index.html
+$dokka.location:org.example/Casella///PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-casella/index.html
+$dokka.location:org.example/Casella/getCodiAscii/#/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-casella/get-codi-ascii.html
+$dokka.location:org.example/Casella/getEntries/#/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-casella/get-entries.html
+$dokka.location:org.example/Casella/valueOf/#kotlin.String/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-casella/value-of.html
+$dokka.location:org.example/Casella/values/#/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-casella/values.html
+$dokka.location:org.example/FunctionsKt///PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-functions-kt/index.html
+$dokka.location:org.example/FunctionsKt/baix/#kotlin.Array[kotlin.Array[org.example.Casella]]#org.example.models.Robot/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-functions-kt/baix.html
+$dokka.location:org.example/FunctionsKt/coordenadesRobotY/#kotlin.Int#kotlin.Int/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-functions-kt/coordenades-robot-y.html
+$dokka.location:org.example/FunctionsKt/dalt/#kotlin.Array[kotlin.Array[org.example.Casella]]#org.example.models.Robot/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-functions-kt/dalt.html
+$dokka.location:org.example/FunctionsKt/dreta/#kotlin.Array[kotlin.Array[org.example.Casella]]#org.example.models.Robot/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-functions-kt/dreta.html
+$dokka.location:org.example/FunctionsKt/esquerra/#kotlin.Array[kotlin.Array[org.example.Casella]]#org.example.models.Robot/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-functions-kt/esquerra.html
+$dokka.location:org.example/FunctionsKt/gameOver/#kotlin.Boolean/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-functions-kt/game-over.html
+$dokka.location:org.example/FunctionsKt/mostrarTaulell/#kotlin.Array[kotlin.Array[org.example.Casella]]/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-functions-kt/mostrar-taulell.html
+$dokka.location:org.example/FunctionsKt/taulell/#/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-functions-kt/taulell.html
+$dokka.location:org.example/MainKt///PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-main-kt/index.html
+$dokka.location:org.example/MainKt/getScan/#/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-main-kt/get-scan.html
+$dokka.location:org.example/MainKt/main/#/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/org.example/-main-kt/main.html
+$dokka.location:utils////PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/index.html
+$dokka.location:utils/ConsoleColorsKt///PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/-console-colors-kt/index.html
+$dokka.location:utils/UtilitiesKt///PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/-utilities-kt/index.html
+$dokka.location:utils/UtilitiesKt/arrodonimentDecimals/#kotlin.Float#kotlin.Int/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/-utilities-kt/arrodoniment-decimals.html
+$dokka.location:utils/UtilitiesKt/demanarNumeroPositiu/#kotlin.String/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/-utilities-kt/demanar-numero-positiu.html
+$dokka.location:utils/UtilitiesKt/getScan/#/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/-utilities-kt/get-scan.html
+$dokka.location:utils/UtilitiesKt/preguntaTrueFalse/#kotlin.String#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/-utilities-kt/pregunta-true-false.html
+$dokka.location:utils/UtilitiesKt/readBoolean/#kotlin.String#kotlin.String/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/-utilities-kt/read-boolean.html
+$dokka.location:utils/UtilitiesKt/readChar/#kotlin.String#kotlin.String#kotlin.Int/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/-utilities-kt/read-char.html
+$dokka.location:utils/UtilitiesKt/readChar/#kotlin.String#kotlin.String/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/-utilities-kt/read-char.html
+$dokka.location:utils/UtilitiesKt/readFloat/#kotlin.String#kotlin.String#kotlin.String#kotlin.Float#kotlin.Float/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/-utilities-kt/read-float.html
+$dokka.location:utils/UtilitiesKt/readFloat/#kotlin.String#kotlin.String/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/-utilities-kt/read-float.html
+$dokka.location:utils/UtilitiesKt/readInt/#kotlin.String#kotlin.String#kotlin.String#kotlin.Int#kotlin.Int/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/-utilities-kt/read-int.html
+$dokka.location:utils/UtilitiesKt/readInt/#kotlin.String#kotlin.String/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/-utilities-kt/read-int.html
+$dokka.location:utils/UtilitiesKt/readSentence/#kotlin.String#kotlin.String/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/-utilities-kt/read-sentence.html
+$dokka.location:utils/UtilitiesKt/readWord/#kotlin.String#kotlin.String/PointingToDeclaration/m3-a36-robot-de-nadal-agustilopz/utils/-utilities-kt/read-word.html
+org.example
+org.example.models
+utils
+
