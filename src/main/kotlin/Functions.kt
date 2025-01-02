@@ -7,7 +7,7 @@ import kotlin.random.Random
 enum class Casella (val codiAscii:String) {
     PARET("\uD83E\uDDF1"), //🧱
     ROBOT("\uD83E\uDD16"), //🤖
-    ROCA("\uD83D\uDEA7"), // 🪨 🚧
+    ROCA("\uD83D\uDEA7"), // 🪨 🚧 //Com que la roca no funcionava, he utilitzat un altre emoji
     DINAMITA("\uD83E\uDDE8") //🧨
 }
 
@@ -341,7 +341,24 @@ fun coordenadesRobotY(i:Int,numFiles:Int=20):Int {
     return numFiles - 1 -i
 }
 
+/**
+ * Aquesta funció serveix per mostrar un missatge de "GAME OVER" per pantalla en format de dibuix
+ * @author agustí.lópez
+ * @since 02/01/2025
+ */
+fun mostrarGameOver() {
+    val gameOverArt = """
+                                           
+  ___    _    __  __  ___    ___  __   __ ___  ___ 
+ / __|  /_\  |  \/  || __|  / _ \ \ \ / /| __|| _ \
+| (_ | / _ \ | |\/| || _|  | (_) | \ V / | _| |   /
+ \___|/_/ \_\|_|  |_||___|  \___/   \_/  |___||_|_\
+                                                   
+                                                                                            
+    """.trimIndent()
 
+    println(utils.RED_BOLD + gameOverArt + RESET)
+}
 
 
 
