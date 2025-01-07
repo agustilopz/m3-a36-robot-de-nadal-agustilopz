@@ -8,7 +8,7 @@ fun main() {
     var taulell = taulell()
     var gameOver: Boolean = false
     var robot = Robot(x = 0, y = 0, 1)
-    println("OPCIONS: " + "POSICIO,BAIX,DRETA,ESQUERRA,ACCELERAR,FRENAR,POSICIO,MOSTRAR,VELOCITAT,REINICIAR,END.")
+    println("OPCIONS: " + "DALT, BAIX, DRETA, ESQUERRA, ACCELERAR, FRENAR, POSICIO, MOSTRAR, VELOCITAT, REINICIAR, END.")
     do {
         var ordreUsuari = scan.nextLine()
 
@@ -72,6 +72,6 @@ fun main() {
             mostrarTaulellGameOver(taulell)
             mostrarGameOver()
         }
-    } while (ordreUsuari != "END" || !gameOver)
+    } while (ordreUsuari != "END" && !gameOver)
 
 }
